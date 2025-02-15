@@ -10,6 +10,8 @@ import com.prueba.veterinaria.veterinaria_patitas.entities.Quote;
 import com.prueba.veterinaria.veterinaria_patitas.interfaces.QuoteInterface;
 import com.prueba.veterinaria.veterinaria_patitas.repositories.QuoteRepository;
 
+import jakarta.transaction.Transactional;
+
 @SpringBootApplication
 public class QuoteService implements QuoteInterface {
 
@@ -27,6 +29,7 @@ public class QuoteService implements QuoteInterface {
     }
 
     @Override
+    @Transactional
     public Quote save(Quote quote) {
         return quoteRepository.save(quote);
     }

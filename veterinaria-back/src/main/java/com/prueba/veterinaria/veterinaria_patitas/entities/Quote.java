@@ -5,13 +5,13 @@ import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-import jakarta.annotation.Generated;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "dates")
@@ -22,11 +22,17 @@ public class Quote implements Serializable {
     private int id;
 
     @Column(length = 100)
+    @NotNull
     private String clientName;
+    @Column(length = 100)
+    @NotNull
     private String petName;
+    @Column(length = 100)
+    @NotNull
     private String reason;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "America/Mexico_City")
+    @NotNull
     private Date date;
 
     public Quote() {
