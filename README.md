@@ -47,3 +47,8 @@ mvn spring-boot:run
 ```
 
 La aplicación estará disponible en: **http://localhost:8080/**
+
+## 🛠️ Tecnologías Utilizadas
+- **Spring Boot 3+**
+- **Java 17**
+- **Spring Data JPA** 
