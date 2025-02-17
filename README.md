@@ -11,6 +11,7 @@ Antes de ejecutar el proyecto, asegúrate de tener instaladas las siguientes her
 - [Git](https://git-scm.com/)
 
 # Instalar dependencias
+```bash
 npm install
 ```
 
@@ -46,7 +47,6 @@ mvn spring-boot:run
 ```
 
 La aplicación estará disponible en: **http://localhost:8080/**
-
 
 ## 🛠️ Tecnologías Utilizadas
 - **Spring Boot 3+**

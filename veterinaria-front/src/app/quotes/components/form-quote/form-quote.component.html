@@ -1,0 +1,25 @@
+<div class="container mt-4">
+
+    <app-alert [type]="alert.type" [message]="alert.message"></app-alert>
+
+    <h2>Registrar Cita</h2>
+    <form [formGroup]="formInformation" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="clientName" class="form-label">Nombre del Cliente</label>
+            <input id="clientName" class="form-control" formControlName="clientName">
+        </div>
+        <div class="mb-3">
+            <label for="petName" class="form-label">Nombre de la Mascota</label>
+            <input id="petName" class="form-control" formControlName="petName">
+        </div>
+        <div class="mb-3">
+            <label for="reason" class="form-label">Motivo de la Cita</label>
+            <input id="reason" class="form-control" formControlName="reason">
+        </div>
+        <div class="mb-3">
+            <label for="dateTime" class="form-label">Fecha y Hora</label>
+            <input type="datetime-local" id="dateTime" class="form-control" formControlName="dateTime">
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="formInformation.invalid">Guardar Cita</button>
+    </form>
+</div>
