@@ -35,9 +35,7 @@ Este proyecto es una aplicación backend desarrollada con **Spring Boot** y **Ja
 Antes de ejecutar el proyecto, asegúrate de tener instaladas las siguientes herramientas:
 
 - [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
-- [Maven](https://maven.apache.org/) o [Gradle](https://gradle.org/) (según el gestor de dependencias utilizado)
-- [Docker](https://www.docker.com/) (opcional, para bases de datos y despliegue)
-- [PostgreSQL](https://www.postgresql.org/) o **MySQL** (según la configuración de la base de datos)
+- [Maven](https://maven.apache.org/)
 
 ## ▶️ Ejecución
 Para compilar y ejecutar el proyecto con **Maven**:
