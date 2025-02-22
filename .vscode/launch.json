@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-VeterinariaPatitasApplication<veterinaria-patitas>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.prueba.veterinaria.veterinaria_patitas.VeterinariaPatitasApplication",
+            "projectName": "veterinaria-patitas",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
